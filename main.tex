@@ -1,0 +1,305 @@
+%
+% LaTeX source of my resume
+% =========================
+%
+% Heavily commented to to fit even LaTeX beginners (hopefully).
+%
+% See the `README.md` file for more info.
+%
+% This file is licensed under the CC-NC-ND Creative Commons license.
+%
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage[a4paper,margin=0.75in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+
+
+
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% title on top of the document
+\maintitle{Yuxuan Zhang}{}{Last update on \today}
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:zyuxuan.at.seas.dot.upenn.dot.edu}{zyuxuan\mbox{}@\mbox{}seas.upenn.edu}\sbull
+\textsmaller {}734-846-1069\sbull
+\href{https://zyuxuan0115.github.io}{zyuxuan0115.github.io}\sbull
+ 3333 Chestnut St., Philadelphia, PA 
+
+%\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Education}
+\headedsection
+  {\textbf{University of Pennsylvania}, Philadelphia, PA}
+  {\textsc{}} {%
+  \headedsubsection
+    {PhD in Computer Science, 2019 - 2026}
+    {}{}
+    \headedsubsection
+    {Advisor: \href{https://www.cis.upenn.edu/~sga001/}{Sebastian Angel}}
+    {}{}
+    \headedsubsection
+    {GPA: 4.0/4.0}
+    {}{}
+}
+
+\headedsection
+  {\textbf{University of Michigan}, Ann Arbor, MI}
+  {\textsc{}} {%
+  \headedsubsection
+    {MS in Electrical Engineering, 2015 - 2017}
+    {}{}
+}
+
+\headedsection
+  {\textbf{Harbin Institute of Technology}, Harbin, China}
+  {\textsc{}} {%
+  \headedsubsection
+    {BS in Electrical Engineering, 2008 - 2012}
+    {} {}
+}
+
+\roottitle{Employment History}
+
+\headedsection
+  {\textbf{Google LLC}, Sunnyvale, CA}
+  {\textsc{}} {%
+  \headedsubsection
+    {Software Engineer Intern, May 2025 - August 2025}
+    {}{}
+}
+
+\headedsection
+  {\textbf{VMWare Corp.}, Boston, MA}
+  {\textsc{}} {%
+  \headedsubsection
+    {Software Engineer Intern, May 2022 - Aug 2022}
+    {}{}
+}
+
+\headedsection
+  {\textbf{Microsoft Research Asia}, Beijing, China}
+  {\textsc{}} {%
+  \headedsubsection
+    {Research Intern, Jan 2018 - July 2019}
+    {}{}
+  \headedsubsection
+    {Mentor: \href{https://www.microsoft.com/en-us/research/people/yqx/}{Yongqiang Xiong}}
+    {}{}
+}
+
+\headedsection
+  {\textbf{NVIDIA Corporation}, Beijing, China}
+  {\textsc{}} {%
+  \headedsubsection
+    {Software Engineer Intern, May 2017 - Sep 2017}
+    {}{}
+}
+
+
+\roottitle{Publications}
+\headedsection  % sets the header for the section and includes any subsections
+  {{\href{https://dl.acm.org/doi/10.1145/3731569.3764830}{\textbf{Quilt: Resource-aware Merging of Serverless Workflows}}.\\
+  Y. Zhang, S. Angel.\\
+  \textit{Proc. ACM Symposium on Operating Systems Principles (\textbf{SOSP})}, Oct. 2025}}
+  {\textsc{}} {
+  }
+
+\headedsection  % sets the header for the section and includes any subsections
+  {{\href{https://dl.acm.org/doi/10.1145/3620665.3640396}{\textbf{RPG2: Robust Profile-Guided Runtime Prefetch Generation}}.\\
+  Y. Zhang, N. Sobotka, S. Park, S. Jamilan, T. A. Khan, B. Kasikci, G. Pokam, H. Litz, J. Devietti.\\
+  \textit{International Conference on Architectural Support for Programming Languages and Operating Systems (\textbf{ASPLOS})}, May. 2024.}}
+  {\textsc{}} {
+  }
+
+\headedsection  % sets the header for the section and includes any subsections
+  {{\href{https://dl.acm.org/doi/abs/10.1109/MM.2023.3274758}{\textbf{Online COde Layout OptimizationS via Ocolos}}.\\
+  Y. Zhang, T. A. Khan, G. Pokam, B. Kasikci, H. Litz, J. Devietti.\\
+  \textit{IEEE Micro Volume 43, Issue 4, ``Top Picks From the 2022 Computer Architecture Conferences"}, July. 2023.}}
+  {\textsc{}} {
+  }
+
+\headedsection  % sets the header for the section and includes any subsections
+  {{\href{https://dl.acm.org/doi/abs/10.1109/MICRO56248.2022.00045}{\textbf{OCOLOS: Online COde Layout OptimizationS}}.\\
+  Y. Zhang, T. A. Khan, G. Pokam, B. Kasikci, H. Litz, J. Devietti.\\
+  \textit{Proc. International Symposium on Microarchitecture (\textbf{MICRO})}, Oct. 2022.}}
+  {\textsc{}} {
+  }
+
+
+\roottitle{Honor \& Awards}
+\headedsection  % sets the header for the section and includes any subsections
+  {{\textbf{Paper selected for IEEE Micro Top Picks in Computer Architecture from 2023}}}
+  {\textsc{}} {%
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {{\textbf{Outstanding Graduates Awards}, \textit{\small{Harbin Institute of Technology, 2012}}}}
+  {\textsc{}} {%
+}
+
+
+\headedsection  % sets the header for the section and includes any subsections
+  {{\textbf{Fuji Xerox Scholarship}, \textit{\small{Harbin Institute of Technology, 2011}}}}
+  {\textsc{}} {%
+  \headedsubsection
+    {\normalfont Undergraduate GPA ranking top 1 for one academic year}
+    {}
+    {}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {{\textbf{Suzhou Industry Park Scholarship}, \textit{\small{Harbin Institute of Technology, 2010}} }}
+  {} {%
+  \headedsubsection
+    {\normalfont Undergraduate GPA ranking top 2 for one academic year}
+    {}
+    {}
+}
+
+
+\roottitle{Talks}
+
+\headedsection
+  {\textbf{RPG$^2$: Robust Profile-Guided Runtime Prefetch Generation}. May. 2024}
+  {\textsc{}} {%
+  \inlineheadsection
+    {}
+    {International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), San Diego, CA.}{}
+    \headedsubsection
+    {}{}{}
+}
+
+\headedsection
+  {\textbf{OCOLOS: Online COde Layouy OptimizationS}. Oct. 2022}
+  {\textsc{}} {%
+  \inlineheadsection
+    {}
+    {International Symposium on Microarchitecture (MICRO), Chicago, IL.}{}
+    \headedsubsection
+    {}{}{}
+}
+
+
+
+\roottitle{Professional Service}
+\headedsection
+  {\textbf{Journal Reviewer}}
+  {\textsc{}} {%
+  \inlineheadsection
+    {}
+    {IEEE Transactions on Computers (TOC), 2023}{}
+  \headedsubsection
+    {}{}{}
+}
+
+
+
+
+\roottitle{Teaching}
+
+\inlineheadsection
+  {Teaching Assistant for CIS505 Distributed Systems,}
+  {University of Pennsylvania, Fall 2020, Fall 2021}
+
+
+
+\roottitle{Selected Research Projects}
+\headedsection  % sets the header for the section and includes any subsections
+  {{\textbf{Quilt: Resource-aware Merging of Serverless Workflows}}}
+  {\textsc{}} {%
+  \headedsubsection
+    {Distributed System Lab, University of Pennsylvania}
+    {}
+    {\bodytext{
+    Built a feedback-driven serverless runtime optimizer that determines how functions within a workflow are deployed and executed. It dynamically merges serverless functions into a single process, guided by call graph analysis and resource consumption data obtained through distributed tracing and runtime profiling. The goal is to minimize function invocation overhead and improve both throughput and resource utilization. }}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {{\textbf{RPG$^2$: Robust Profile-Guided Runtime Prefetch Generation}}}
+  {\textsc{}} {%
+  \headedsubsection
+    {Architecture+Compilers group, University of Pennsylvania}
+    {}
+    {\bodytext{
+    Built an online data cache prefetching system that can profile and analyze the behavior of data memory accesses and then make the decision of whether and where to insert the prefetch instructions into the running process. After prefetches inserted, RPG$^2$ can monitor and tune the prefetches to maximize performance.}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {{\textbf{OCOLOS: Online COde Layout Optimization System}}}
+  {\textsc{}} {%
+  \headedsubsection
+    {Architecture+Compilers group, University of Pennsylvania}
+    {}
+    {\bodytext{
+    Built a code layout optimization tool that optimizes the code layout of datacenter applications at runtime. The optimization process involves profiling and analyzing the application to generate an optimized code layout, which is then injected into the program's text section to enhance performance.}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {{\textbf{Glane on GPU}}}
+  {\textsc{}} {%
+  \headedsubsection
+    {Networking Research Group, Microsoft Research Asia}
+    {}
+    {\bodytext{Built a Linux module that can expose an NVIDIA GPU's physical memory for direct data transfer, and a hardware stack for GPUs in a device-centric cluster to buffer and transfer data. Prototyped CUDA code to perform GPU computation and data transfer in parallel without host CPU involvement.}}
+}
+
+%\headedsection  % sets the header for the section and includes any subsections
+%  {{\textbf{Pre-validation during pre-copy on VMotion}}}
+%  {\textsc{}} {%
+%  \headedsubsection
+%    {Monitor team, VMWare Corp.}
+%    {}
+%    {\bodytext{Offloaded the pre-validation of the destination virtual machine (VM)'s page table from Virtual Machine Monitor (VMM) to ESXi (VMKernel, the hypervisor) after a VM is migrated from source to destination (VMotion), in order to reduce the contention of updating page tables in different VMs. Built pre-validation during the pre-copy of memory pages during VMotion to reduce the time spent on pre-validation. }}
+%}
+
+
+
+%\headedsection
+%  {LIP Automatisering}
+%  {\textsc{Breda, The Netherlands}} {%
+%  \headedsubsection
+%    {Software Auditor}
+%    {Sep \apo06}
+%    {\bodytext{Audited their flag ship product \emph{\acr{LIP} Suite}:\ an %\acr{ERP} solution for construction companies.}}
+%}
+
+
+
+
+
+
+
+\roottitle{Skills}
+
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {Programming:}
+  {C/C++, Python, JavaScript, Rust, System Verilog}
+  \inlineheadsection
+  {Language:}
+  {Chinese (native), English (professional working proficiency), Japanese (intermediate level)}
+\inlineheadsection  % special section that has an inline header with a 'hanging' 
+{}{}
+
+\end{document}
+
+
